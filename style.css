@@ -48,10 +48,37 @@ a {
     margin: 15px 0;
 }
 
-button {
+.sign-in-button {
+    border-radius: 20px;
+
+    border: 1px solid #F97316;
+    background-color: #F97316;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+
+.sign-up-button {
     border-radius: 20px;
     border: 1px solid #3996ff;
     background-color: #3996ff;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+
+button {
+    border-radius: 20px;
+    border: 1px solid #F97316;
+    background-color: #F97316;
     color: #FFFFFF;
     font-size: 12px;
     font-weight: bold;
@@ -74,7 +101,7 @@ button.ghost {
     border-color: #FFFFFF;
 }
 
-form {
+.form {
     background-color: #FFFFFF;
     display: flex;
     align-items: center;
@@ -168,9 +195,6 @@ input {
 }
 
 .overlay {
-    background: #F97316;
-    /* background: -webkit-linear-gradient(to right, #F97316, #fcff39);
-    background: linear-gradient(to right, #F97316, #3996ff); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
@@ -181,6 +205,14 @@ input {
     width: 200%;
     transform: translateX(0);
     transition: transform 0.6s ease-in-out;
+}
+
+.overlay-topic {
+    background: #F97316;
+}
+
+.overlay-service {
+    background: #1d85fc;
 }
 
 .container.right-panel-active .overlay {
